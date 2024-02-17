@@ -1,0 +1,14 @@
+$primary: #202020;
+$secondary: #505050;
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "cyber-yellow": #f3e500,
+    "cyber-blue": #01faff
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
